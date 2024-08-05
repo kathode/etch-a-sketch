@@ -1,0 +1,39 @@
+body {
+  background: black;
+  height: 100vh;
+  width: 100vw;
+  margin: 0;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+div.container {
+  width: 960px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.row {
+  display: flex;
+}
+
+.row:last-child {
+  border-bottom: 2px solid palegreen;
+}
+
+.cell {
+  border-top: 2px solid palegreen;
+  border-right: 2px solid palegreen;
+  transition: background-color 0.15s;
+}
+
+.cell:nth-child(1) {
+  border-left: 2px solid palegreen;
+}
