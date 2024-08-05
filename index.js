@@ -64,7 +64,7 @@ function removeGrid() {
 function resetGridSize() {
   const size = Number(prompt("Enter the size of the grid"));
 
-  if (size > 0 || size <= 100) {
+  if (size > 0 && size <= 100) {
     removeGrid();
     createGrid(size, size, 1);
   } else {
